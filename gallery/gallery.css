@@ -16,7 +16,7 @@ html, body {
   
 /* Logo image sizing */
 .logo img {
-    height: 125px; /* Adjust size as needed */
+    height: 125px; 
     width: auto;
 }
   
@@ -39,7 +39,7 @@ html, body {
 }
 
 .navigation-bar li a:hover {
-    color: maroon; /* Change text color to white for contrast */
+    color: maroon; 
 }
 
 /* CTA button */
