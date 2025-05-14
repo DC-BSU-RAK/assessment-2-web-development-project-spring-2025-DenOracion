@@ -277,7 +277,7 @@ body {
     transform: scale(1.1);
   }
 
-  /* --- Phones (480px and below) --- */
+  /* Media query for phones (480px and below) */
 @media (max-width: 480px) {
     .overview h2 {
         font-size: 1.4rem;
