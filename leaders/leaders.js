@@ -3,7 +3,7 @@ const leaders = { //const leaders stores all the data for the leaders
   "base-game": [ // Base Game Leaders 
     {
       name: "Teddy Roosevelt", // name of leader
-      civ: "America", // Civilization they helong to
+      civ: "America", // Civilization they belong to
       ability: "Roosevelt Corollary - Combat strength on home continent, bonus appeal to Cities with National Parks and the Rough Rider unique unit.", // What their abilities do
       agenda: "Big Stick Policy - Likes peaceful civilizations on his continent, dislikes warmongers on his continent.", // Agenda that dictates how they play and their behavior 
       img: "leader_portraits/Teddy_Roosevelt_29.webp"
@@ -175,7 +175,7 @@ const leaders = { //const leaders stores all the data for the leaders
     {
       name: "Elizabeth I",
       civ: "England",
-      ability: "Drake's Legacy - After recruiting England's first Great Admral, gain additional trade route capacity. Trade routes to city-states gain bonus gold for every specialty district from the origin city. Double yields from plundering trade routes.",
+      ability: "Drake's Legacy - After recruiting England's first Great Admiral, gain additional trade route capacity. Trade routes to city-states gain bonus gold for every specialty district from the origin city. Double yields from plundering trade routes.",
       agenda: "Trade Agreement - Tries to have as many trade routes as possible and likes civilizations who trade with her.",
       img: "leader_portraits/Elizabeth_I_29.webp"
     },
