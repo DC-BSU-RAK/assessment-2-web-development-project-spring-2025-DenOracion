@@ -130,7 +130,7 @@ const leaders = { //const leaders stores all the data for the leaders
   "new-frontier": [
     {
       name: "Simón Bolívar",
-      civ: "Gran Columbia",
+      civ: "Gran Colombia",
       ability: "Campaña Admirable - Entering a new era grants a Commandante General, a unique Great Person.",
       agenda: "Carabobo - Focuses on promoting his units and building many encampments. Likes civilizations who have many promoted units.",
       img: "leader_portraits/Sim3Fvar_29.webp"
