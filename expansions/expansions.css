@@ -109,25 +109,34 @@ body {
     margin: 0.3rem 0;
 }
 
-.trailer {
-    position: relative;
-    padding: 25em 10em 25em 10em ; 
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    margin: 1rem 0;
+.trailer video {
+  width: 100%;
+  max-width: 800px; /* optional limit */
+  height: auto;      /* maintain aspect ratio */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;    /* center video horizontally */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* optional shadow */
 }
 
-.trailer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 8px;
-    display: grid;
-    place-items: center;
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.trailer {
+  display: flex;
+  justify-content: center; 
+  margin: 40px 0; 
 }
 
 /* Toggle button for features and civs/leaders */
@@ -277,25 +286,56 @@ body {
     transform: scale(1.1);
   }
 
-  /* Media query for phones (480px and below) */
+/* Phones (480px and below) */
 @media (max-width: 480px) {
-    .overview h2 {
-        font-size: 1.4rem;
-    }
+  .overview h2 {
+    font-size: 1.4rem;
+  }
 
-    .navigation-bar {
-        gap: 0.8rem;
-    }
+  .navigation-bar {
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .civ-leader-grid {
-        grid-template-columns: 1fr;
-    }
+  .civ-leader-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .footer-title {
-        font-size: 16px;
-    }
+  .footer-title {
+    font-size: 16px;
+  }
 
-    .trailer {
-        padding-top: 56.25%; /* Keeps 16:9 on smaller screens */
-    }
+  .trailer video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (max-width: 768px) {
+  .overview h2 {
+    font-size: 1.6rem;
+  }
+
+  .navigation-bar {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .civ-leader-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .trailer video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
